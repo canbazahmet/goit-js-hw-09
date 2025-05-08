@@ -1,2 +1,2 @@
 # goit-js-hw-09
-JavaScript 10
+JavaScript 09
