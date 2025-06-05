@@ -9,4 +9,4 @@ import"./assets/modulepreload-polyfill-B5Qt9EMX.js";import{S as n}from"./assets/
         />
       </a>
     </li>`).join("");e.innerHTML=s;e.addEventListener("click",o=>{if(o.preventDefault(),o.target.nodeName==="IMG"){const t=o.target.parentElement.href,a=basicLightbox.create(`<img src="${t}" width="1112" height="640">`);a.show();const i=p=>{(p.key==="Escape"||p.key==="Esc")&&(a.close(),document.removeEventListener("keydown",i))};document.addEventListener("keydown",i)}});new n(".gallery a",{captions:!0,captionsData:"alt",captionPosition:"bottom",captionDelay:250});
-//# sourceMappingURL=01-gallery.js.map
+//# sourceMappingURL=1-gallery.js.map
