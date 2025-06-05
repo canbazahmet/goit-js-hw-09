@@ -89,25 +89,6 @@ const gallery = images
 
 imagesList.innerHTML = gallery;
 
-imagesList.addEventListener('click', event => {
-  event.preventDefault();
-  if (event.target.nodeName === 'IMG') {
-    const bigImage = event.target.parentElement.href;
-    const instance = basicLightbox.create(
-      `<img src="${bigImage}" width="1112" height="640">`
-    );
-    instance.show();
-
-    const escCloseHandler = event => {
-      if (event.key === 'Escape' || event.key === 'Esc') {
-        instance.close();
-        document.removeEventListener('keydown', escCloseHandler);
-      }
-    };
-    document.addEventListener('keydown', escCloseHandler);
-  }
-});
-
 new SimpleLightbox('.gallery a', {
   captions: true,
   captionsData: 'alt',
